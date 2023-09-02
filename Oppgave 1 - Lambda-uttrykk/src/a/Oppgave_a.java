@@ -23,7 +23,6 @@ public class Oppgave_a {
 		
 		
 		System.out.println(listen);
-		
 	}
 
 }
