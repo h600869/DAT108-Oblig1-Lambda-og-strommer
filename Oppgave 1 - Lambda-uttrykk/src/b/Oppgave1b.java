@@ -4,15 +4,6 @@ import java.util.*;
 
 public class Oppgave1b {
 
-	public static int summerFunksjon() {
-		Scanner sc = new Scanner (System.in);
-		System.out.println("Gi en verdi til funksjonen SummerFunksjon");
-		
-		int svar =sc.nextInt();
-		sc.close();
-		
-		return svar;
-	}
 	public static int beregn (int a, int b, int summerFunksjon) {
 		
 		int resultat = 0;
