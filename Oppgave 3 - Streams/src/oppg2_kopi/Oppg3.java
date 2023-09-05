@@ -136,8 +136,10 @@ System.out.println("\nOppgave g");
 System.out.println("\nÅrslønnene til hver person sortert fra minst til størst");
 System.out.println("\n");
 List<Map.Entry<String, Integer>> ansatteData = ansatte.stream()
-.map(ansatt -> new SimpleEntry<>(ansatt.getFornavn() + " " + ansatt.getEtternavn() + ": ", ansatt.getAarslønn()))
-.collect(Collectors.toList());
+		.map(ansatt -> new SimpleEntry<>(ansatt.getFornavn() + " " + ansatt.getEtternavn() + ": ", ansatt.getAarslønn()))
+		.collect(Collectors.toList());
+
+ansatteData.sort(Comparator.comparing(Map.Entry::getValue));
 
 ansatteData.forEach(entry -> System.out.println(entry.getKey() + " Aarslønn: " + entry.getValue()));
 	
