@@ -12,6 +12,7 @@ public class Oppg2 {
         }
     }
 	
+	
 	private static void skrivUtAlle(List<Ansatt> ansatte) {
 		for (Ansatt ansatt: ansatte) {
 			System.out.println("Fornavn: " + ansatt.getFornavn() 
